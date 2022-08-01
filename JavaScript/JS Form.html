@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Perhitungan</title>
+</head>
+    <script>
+        function hit(){
+            b1 = parseInt(document.getElementById("bil1").value); //parsetInt tipedata untuk mengubah variable
+            b2 = parseInt(document.getElementById("bil2").value);
+            b3 = b1 + b2;
+            //document.write(b3);
+            document.getElementById("bil3").value = b3;
+        }
+    </script>
+<body>
+    <form method="get" action="" name="form">
+        <table border="1">
+            <tr>
+                <td colspan="2">Penjumlahan</td> <!-- Colspan digunakan untuk menggbungkan beberapa kolom sebaliknya untuk Rowspan untuk row-->
+            </tr>
+            <tr>
+                <td>Bilangan 1</td>
+                <td>
+                    <input type="number" name="bil1" id="bil1">
+                </td>
+            </tr>
+            <tr>
+                <td>Bilangan 2</td>
+                <td>
+                    <input type="number" name="bil2" id="bil2">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button type="button" onclick="hit()" name="hitung">Hitung</button>
+                    <button type="reset" name="reset">Reset</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Hasil Penjumlahan</td>
+                <td>
+                    <input type="number" name="bil3" id="bil3">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

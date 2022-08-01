@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpustakaan</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        *{
+            /* border: 1px solid black; */
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        form{
+            width: 420px;
+            height: auto;
+            background-color: aliceblue;
+            padding: 20px;
+        }
+        #alamat{
+            margin: 15px;
+            padding: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .input-group-text{
+            background-color: rgb(0, 195, 255);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <!-- Input ID Anggota -->
+            <div class="input-group mb-3">
+                <span class="input-group-text">ID Anggota</span>
+                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+              </div>
+            <!-- Input Nama -->
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Nama</span>
+                <input type="text" class="form-control" placeholder="Nama Lengkap" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <!-- Input Alamat -->
+            <div class="input-group">
+                <span class="input-group-text">Alamat</span>
+                <textarea class="form-control" aria-label="With textarea"></textarea>
+            </div>
+              <!-- Input Jenis Kelamin -->
+            <div  class="input-group">
+                <div id="alamat" class="input-group-text">
+                  <input class="form-check-input mt-0" type="radio" value="jenisKelamin" aria-label="Radio button for following text input" name="jenisKelamin">Laki-Laki
+                </div>
+            </div>
+            <div class="input-group">
+                <div id="alamat" class="input-group-text">
+                  <input class="form-check-input mt-0" type="radio" value="jenisKelamin" aria-label="Radio button for following text input" name="jenisKelamin">Perempuan
+                </div>
+            </div>
+            <!-- Input Status -->
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Status</span>
+                <input type="text" class="form-control" placeholder="Mahasiswa" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+                <button type="button" class="btn btn-primary">Primary</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

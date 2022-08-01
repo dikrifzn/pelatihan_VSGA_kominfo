@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Membuat Form</title>
+</head>
+<body>
+    <!--
+    <form method="post/get" action="name="></form>
+    post tidak akan di tampilkan di url get sebaliknya
+
+    action itu untuk tombol yang di tuju
+    name= menentukan nama form
+
+    input, text area, label, fieldset, select, option, button.
+    
+    radio-Button hanya memilih satu  pilihan
+    checkbox untuk memilih banyak pilihan
+
+    autofocus di gunakan untuk pada saat web di buka maka kursor ketikan langsung berada di inputan tersebut
+    required digunakan untuk keharusan di isi inputan tersebut
+    -->
+    <table>
+        <tr>
+            <td>
+                <label for="noReg">Nomor Registrasi : </label>
+            </td>
+            <td>
+                <input type="number" name="noReg" id="noReg" autofocus required>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="nama">Nama Lengkap : </label>
+            </td>
+            <td>
+                <input type="text" name="nama" id="nama">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="tglLahir">Tanggal Lahir : </label>
+            </td>
+            <td>
+                <input type="date" name="tglLahir" id="tglLahir">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="jenisKelamin">Jenis Kelamin : </label>
+            </td>
+            <td>
+                <input type="radio" name="jenisKelamin" id="jenisKelamin" value="lakiLaki">Laki-Laki
+                <input type="radio" name="jenisKelamin" id="jenisKelamin" value="perempuan">Perempuan
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="website">Website : </label>
+            </td>
+            <td>
+                <input type="url" name="url" id="url">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="email">Email : </label>
+            </td>
+            <td>
+                <input type="email" name="email" id="email">
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+            </td>
+            <td>
+                
+            </td>
+        </tr>
+    </table>
+        <div>
+            <label for="hobi">Hobi : </label>
+            <input type="checkbox" name="hobi" id="hobi" value="Bernyanyi">Bernyanyi
+            <input type="checkbox" name="hobi" id="hobi" value="BermainBola">Bermain Bola
+            <input type="checkbox" name="hobi" id="hobi" value="Ngoding">Ngoding
+        </div>
+        <div>
+            <label for="alamat">Alamat : </label>
+            <textarea name="alamat" id="alamat" cols="25" rows="5"></textarea>
+        </div>
+        <div>
+            <label for="noTelp" name="noTelp">Telphone : </label>
+            <input type="tel" name="noTelp" id="noTelp">
+        </div>
+        <div>
+            <label for="kompetensi">kompetensi : </label>
+            <select name="kompetensi" id="kompetensi">
+                <option value="JWD">Junior Web Developer</option>
+                <option value="JMP">Junior Mobile Developer</option>
+                <option value="JNA">Junior Network Administrator</option>
+            </select>
+        </div>
+        <div>
+            <button type="submit" name="kirim" value="kirim">kirim</button>
+            <button type="reset" name="batal" value="batal">Batal</button>
+        </div>
+    </form>
+</body>
+</html>

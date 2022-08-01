@@ -1,0 +1,21 @@
+latarMerah{
+    background-color: red;
+    color: white;
+}
+p{
+    color: green;
+    letter-spacing: 0.5em;
+}
+h4{
+    letter-spacing: -2px;
+}
+
+a:link{
+    color: green;
+}
+a:hover{
+    color: red;
+}
+a{
+    color: green;
+}

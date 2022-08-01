@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Overlock:wght@900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    transition: 0.5s;
+    font-family: 'Overlock';
+}
+header.sticky{
+    background: #fff;
+    padding: 5px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+header.sticky a{
+    color: black;
+}
+header .logoHeader a img{
+    position: relative;
+    width: 45px;
+    height: 45px;
+    margin-left: 75px;
+    box-sizing: border-box;
+}
+header .logoHeader.active{
+    filter: invert(1);
+}
+header ul{
+    margin-right: 75px;
+}
+header ul.sticky{
+    margin-right: 70px;
+}
+header li{
+    list-style: none;
+    display: inline;
+    margin: 10px;
+    padding: 5px;
+}
+header li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+header li a:hover{
+    color: rgb(110, 0, 46);
+}
+
+/* Section Banner */
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/Banner.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 100px;
+    font-family: 'Chelsea Market';
+}
+.banner .tittle{
+    width: 70%;
+    text-align: center;
+    color: white;
+}
+.banner .tittle h1{
+    font-size: 3em;
+}
+.banner .btn{
+    text-decoration: none;
+    background-color: rgb(110, 0, 46);
+    color: white;
+    display: inline-block;
+    padding: 5px 6px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+/* Section About */
+.about{
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 60px;
+    padding-left: 75px;
+    padding-right: 75px;
+    box-sizing: border-box;
+    font-family: 'Chelsea Market';
+}
+.about h2{
+    text-align: center;
+}
+.about img{
+    width: 300px;
+    height: 300px;
+    filter: invert(1);
+    float: left;
+    margin: 30px;
+    margin-right: 45px;
+}
+.about p{
+    font-size: 1,5em;
+    text-align: justify;
+}
+
+/* Section Menu */
+.menu{
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 60px;
+    padding-left: 75px;
+    padding-right: 75px;
+    font-family: 'Chelsea Market';
+}
+.menu .content .menuTittle{
+    width: 100%;
+    text-align: center;
+}
+.menu .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.menu .content .box{
+    width: 350px;
+    height: 350px;
+    margin: 40px;
+    padding: 15px;
+    box-shadow: 0 10px 40px rgb(0, 0, 0, 0.2);
+}
+.menu .content .box .imageBox{
+    width: 300px;
+    height: 300px;
+    margin: 5px;
+    align-content: center;
+}
+.menu .content .box .imageBox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* section Testimoni */
+.testimoni{
+    width: 100%;
+    height: 100vh;
+    padding-top: 70px;
+    background-color: rgb(110, 0, 46);
+    font-family: 'Chelsea Market';
+}
+.testimoni .testtittle{
+    text-align: center;
+}
+.testimoni .testtittle h2{
+    color: white;
+}
+.testimoni .slider img{
+    height: 80vh;
+    margin: auto;
+    padding: auto;
+}
+
+/* Section Contact */
+.contact{
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 80px;
+    font-family: 'Chelsea Market';
+}
+.contact .inputtittle{
+    width: 100%;
+    text-align: center;
+}
+.contact .inputBigBox{
+    padding: 50px 50px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgb(0, 0, 0, 0.2);
+    height: 100%;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 35px;
+}
+.contact .inputBigBox .inputtittlebox{
+    margin-bottom: 20px;
+}
+.contact .inputBigBox .inputBox{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contact .inputBigBox .inputBox input,
+.contact .inputBigBox .inputBox textarea{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-weight: 300;
+    resize: none;
+}
+.contact .inputBigBox .inputBox input[type="submit"]{
+    font-size: 1em;
+    color: #fff;
+    background-color: rgb(110, 0, 46);
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width: 100px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+.contact .inputBigBox .socialMedia li{
+    list-style: none;
+    display: inline-block;
+}
+.contact .inputBigBox .socialMedia li a img{
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+}
+
+/* Section Copyright */
+.copyright{
+    background-color: rgba(110, 0, 46, 0.3);
+    padding: 8px 40px;
+    border-top: 1px solid rgb(0, 0, 0, 0.1);
+    text-align: center;
+}
+.copyrightText p{
+    color: #111;
+}
+.copyrightText a{
+    color: #111;
+    text-decoration: none;
+}
+
+/* Mobile Responsive */
+@media (max-width: 991px){
+    header, header.sticky{
+        padding: 10px;
+    }
+    header .navigation{
+        display: none;
+    }
+    header .navigation.active{
+        width: 100%;
+        height: calc(100% - 5px);
+        position: fixed;
+        top: 59px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        background-color: white;
+    }
+    header .navigation li a{
+        color: black;
+        margin-left: 0;
+        margin-right: 0;
+
+    }
+    header .navigation ul{
+        color: black;
+        margin-left: 0;
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    header .logoHeader{
+        width: 40px;
+        height: 40px;
+    }
+    header .logoHeader a img{
+        margin: 0;
+        size: 100%;
+    }
+    .menuToggle{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background-image: url(img/MenuIcon.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        filter: invert(1);
+        cursor: pointer;
+    }
+    .menuToggle.active{
+        background-image: url(img/MenuCloseIcon.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        filter: invert(1);
+        cursor: pointer;
+    }
+    header.sticky .menuToggle{
+        filter: invert(0);
+    }
+    .about {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .about .imgabout{
+        width: 400px;
+        max-width: 100%;
+        height: 100%;
+    }
+    .about img {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        padding: 50px;
+    }
+    .menu{
+        padding-top: 60px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .menu .content .box {
+        width: 300px;
+        height: 300px;
+        max-height: 100%;
+        max-width: 100%;
+    }
+    .menu .content .box .imageBox {
+        width: 250px;
+        height: 250px;
+    }
+    .contact .inputBigBox {
+        max-width: 400px;
+    }
+}

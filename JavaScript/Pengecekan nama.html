@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pengecekan</title>
+</head>
+    <script>
+        function cek(){
+            nama = document.getElementById("nama").value;
+            if(nama == ""){
+                alert("Nama Tidak Boleh Kosong");
+            }else if(nama == " "){
+                alert("Nama Tidak Boleh Kosong");
+            }else{
+                alert("Selamat!")
+            }
+        }
+    </script>
+<body>
+    <form method="post" onsubmit="return cek()">
+        Nama : <input id="nama" type="text" name="nama">
+        <br>
+        <input type="submit" name="simpan" value="simpan">
+    </form>
+</body>
+</html>
